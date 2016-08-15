@@ -12,6 +12,13 @@
 		350FBC701D5BE1020047A43F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 350FBC6E1D5BE1020047A43F /* Main.storyboard */; };
 		350FBC721D5BE1020047A43F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 350FBC711D5BE1020047A43F /* Assets.xcassets */; };
 		350FBC751D5BE1020047A43F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 350FBC731D5BE1020047A43F /* LaunchScreen.storyboard */; };
+		350FBC7D1D5BE1400047A43F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350FBC7C1D5BE1400047A43F /* CoreDataStack.swift */; };
+		350FBC801D5D18CB0047A43F /* CoreTasks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 350FBC7E1D5D18CB0047A43F /* CoreTasks.xcdatamodeld */; };
+		350FBC821D5D3AE00047A43F /* CoreTasksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350FBC811D5D3AE00047A43F /* CoreTasksController.swift */; };
+		350FBC851D5D445F0047A43F /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350FBC831D5D445F0047A43F /* Item+CoreDataProperties.swift */; };
+		350FBC861D5D445F0047A43F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350FBC841D5D445F0047A43F /* Item.swift */; };
+		354D8C401D60024300487CB8 /* CoreTasksFetchedResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354D8C3F1D60024300487CB8 /* CoreTasksFetchedResultsController.swift */; };
+		354D8C421D61558B00487CB8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354D8C411D61558B00487CB8 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		350FBC711D5BE1020047A43F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		350FBC741D5BE1020047A43F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		350FBC761D5BE1020047A43F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		350FBC7C1D5BE1400047A43F /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		350FBC7F1D5D18CB0047A43F /* CoreTasks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreTasks.xcdatamodel; sourceTree = "<group>"; };
+		350FBC811D5D3AE00047A43F /* CoreTasksController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreTasksController.swift; sourceTree = "<group>"; };
+		350FBC831D5D445F0047A43F /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Item+CoreDataProperties.swift"; path = "../Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		350FBC841D5D445F0047A43F /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = ../Item.swift; sourceTree = "<group>"; };
+		354D8C3F1D60024300487CB8 /* CoreTasksFetchedResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreTasksFetchedResultsController.swift; sourceTree = "<group>"; };
+		354D8C411D61558B00487CB8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +68,19 @@
 		350FBC691D5BE1020047A43F /* CoreTasks */ = {
 			isa = PBXGroup;
 			children = (
+				350FBC831D5D445F0047A43F /* Item+CoreDataProperties.swift */,
+				350FBC841D5D445F0047A43F /* Item.swift */,
 				350FBC6A1D5BE1020047A43F /* AppDelegate.swift */,
 				350FBC6C1D5BE1020047A43F /* ViewController.swift */,
+				354D8C3F1D60024300487CB8 /* CoreTasksFetchedResultsController.swift */,
 				350FBC6E1D5BE1020047A43F /* Main.storyboard */,
 				350FBC711D5BE1020047A43F /* Assets.xcassets */,
 				350FBC731D5BE1020047A43F /* LaunchScreen.storyboard */,
 				350FBC761D5BE1020047A43F /* Info.plist */,
+				350FBC811D5D3AE00047A43F /* CoreTasksController.swift */,
+				350FBC7C1D5BE1400047A43F /* CoreDataStack.swift */,
+				350FBC7E1D5D18CB0047A43F /* CoreTasks.xcdatamodeld */,
+				354D8C411D61558B00487CB8 /* DetailViewController.swift */,
 			);
 			path = CoreTasks;
 			sourceTree = "<group>";
@@ -136,7 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354D8C421D61558B00487CB8 /* DetailViewController.swift in Sources */,
+				350FBC851D5D445F0047A43F /* Item+CoreDataProperties.swift in Sources */,
+				350FBC7D1D5BE1400047A43F /* CoreDataStack.swift in Sources */,
+				354D8C401D60024300487CB8 /* CoreTasksFetchedResultsController.swift in Sources */,
+				350FBC801D5D18CB0047A43F /* CoreTasks.xcdatamodeld in Sources */,
 				350FBC6D1D5BE1020047A43F /* ViewController.swift in Sources */,
+				350FBC861D5D445F0047A43F /* Item.swift in Sources */,
+				350FBC821D5D3AE00047A43F /* CoreTasksController.swift in Sources */,
 				350FBC6B1D5BE1020047A43F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,8 +315,22 @@
 				350FBC7B1D5BE1020047A43F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		350FBC7E1D5D18CB0047A43F /* CoreTasks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				350FBC7F1D5D18CB0047A43F /* CoreTasks.xcdatamodel */,
+			);
+			currentVersion = 350FBC7F1D5D18CB0047A43F /* CoreTasks.xcdatamodel */;
+			path = CoreTasks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 350FBC5F1D5BE1020047A43F /* Project object */;
 }
